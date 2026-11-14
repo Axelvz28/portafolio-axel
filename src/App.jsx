@@ -9,10 +9,10 @@ import Contacto from './pages/Contacto';
 function App() {
   return (
     <BrowserRouter>
-      {/* El Navbar se queda fijo arriba en todas las páginas */}
+      
       <Navbar /> 
       
-      {/* Aquí se inyectan las páginas según la URL */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre-mi" element={<SobreMi />} />
