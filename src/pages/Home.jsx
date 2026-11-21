@@ -1,12 +1,14 @@
-import { Typography, Container } from '@mui/material';
+import { Box } from '@mui/material';
+import Hero from '../components/Hero';
+import AboutSection from '../components/AboutSection';
+import ProjectsSection from '../components/ProjectsSection';
 
-function Home() {
+export default function Home() {
   return (
-    <Container sx={{ mt: 4 }}>
-      <Typography variant="h3" component="h1">Página de Inicio</Typography>
-      <Typography>Bienvenido a mi portafolio axel programador</Typography>
-    </Container>
+    <Box sx={{ backgroundColor: '#0B0F19', minHeight: '100vh' }}>
+      <Hero />
+      <AboutSection />
+      <ProjectsSection />
+    </Box>
   );
 }
-
-export default Home;
